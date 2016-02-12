@@ -142,7 +142,7 @@ ul.skills {
   background: #8E4585; /* Plum */
 }
 
-.myguitar {
+.pic {
   max-width: 200px;
   display: table;
   margin: 0 auto;
@@ -220,7 +220,7 @@ a.social:hover {
     margin-top: 170px;
   }
 
-  .myguitar {
+  .pic {
     max-width: 400px;
   }
 
