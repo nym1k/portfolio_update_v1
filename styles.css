@@ -27,7 +27,7 @@ a:hover {
   width: 100%;
   background: black;
   min-height: 30px;
-  padding: 10px;
+  padding: 10px 5px;
   position: fixed;
   text-align: center;
 }
@@ -45,6 +45,7 @@ a:hover {
     margin-right: auto;
     color: white;
 }
+
 .nav li {
   padding: 5px 10px 10px 10px;
 }
@@ -60,11 +61,15 @@ header {
   background: url('images/bloodstock.jpg') no-repeat center center ;
   background-size: cover;
   overflow: hidden;
-  padding-top: 60px;
+  padding-top: 50px;
 }
 
 .guitarpage {
   background: url('images/picks.jpg') no-repeat center center ;
+}
+
+.exppage {
+  background: url('images/matrix.jpg') no-repeat center center ;
 }
 
 header {
@@ -75,12 +80,13 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 5px dotted teal;
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2) rotate(40deg);
 }
+
 .tag {
   background-color: #efefef;
   color: black;
@@ -88,7 +94,11 @@ header .profile-image:hover {
   border-radius: 5px;
   display: table;
   margin: 10px auto;
-} 
+}
+
+.title {
+  margin: 50px auto;
+}
 
 .location {
   background-color: #222;
@@ -114,27 +124,34 @@ ul.skills {
   text-align: center;
 }
 
-.skills li {
+.skills li,
+.sites li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #0399ff;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #ff9904;
+}
+
+.sites li:nth-child(even) {
+  background: #8E4585; /* Plum */
 }
 
 .myguitar {
-  max-width: 300px;
+  max-width: 200px;
+  display: table;
+  margin: 0 auto;
 }
 
 footer {
   width: 100%;
   min-height: 30px;
-  padding: 20px 0 40px 20px;
+  padding: 20px 0 40px;
 }
 
 footer .copyright {
@@ -199,8 +216,8 @@ a.social:hover {
     padding: 0 30px;
   }
 
-  .guitar {
-    margin-top: 150px;
+  .title {
+    margin-top: 170px;
   }
 
   .myguitar {
